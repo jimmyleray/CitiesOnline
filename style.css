@@ -1,0 +1,184 @@
+html
+{
+	cursor:url(./images/cursor.png),default;
+}
+
+*
+{
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+    padding:0px;
+    margin:0px;
+	font-family:Lucida Console;
+	text-shadow:0px 0px 1px rgba(0,0,0,0.5);
+	color:black;
+}
+
+#loading_container
+{
+	width:100px;
+	margin:auto;
+	margin-top:40%;
+}
+
+#main_container
+{
+	visibility:hidden;
+	background-color:#f0f0f0;
+	position:fixed;
+	top:0px;bottom:0px;left:0px;right:0px;
+	text-align:center;
+	color:black;
+}
+
+#ressources_bar
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:13px;
+}
+
+#ressources_bar div
+{
+	float:left;
+	border-right:1px solid #cacaca;
+	padding: 5px 8px 0px 8px;
+	height: 25px;
+}
+
+#ressources_bar img
+{
+	vertical-align:middle;
+}
+
+#ressources_money #money_variation
+{
+	font-size:10px;
+}
+
+#menu_bar
+{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+#menu_bar #options_icon:hover,#menu_bar #volume_icon:hover
+{
+	background-color:#cacaca;
+}
+
+#options_icon,#fullscreen_icon,#volume_icon
+{
+	float:right;
+	position:relative;
+	top:0px;
+	right:0px;
+	padding: 5px 8px 0px 8px;
+	height: 25px;
+	border-left:1px solid #cacaca;
+}
+
+#options_menu
+{
+	visibility:hidden;
+	text-align:center;
+	position:absolute;
+	top:31px;
+	right:0px;
+	width:160px;
+	padding:10px;
+	padding-bottom:7px;
+	font-size:12px;
+	border-left:1px solid #cacaca;
+	border-bottom:1px solid #cacaca;
+	background-color:#f0f0f0;
+}
+
+#game_container
+{
+	background-color:white;
+	border-top:1px solid #cacaca;
+	position:absolute;
+	bottom:0px;top:30px;left:0px;right:0px; /*très important*/
+	overflow:hidden; /*important*/
+}
+
+#game_map
+{
+	position:absolute;
+	bottom:0px;top:0px;left:0px;right:0px;
+	max-width:100%;
+	max-height:100%;
+}
+
+#map_container
+{
+	position:relative;
+	left:-30px;
+	top:-15px;
+}
+
+#map_container canvas
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.map_tiles
+{
+	position:relative;
+}
+
+#interface_container
+{
+	position:absolute;
+	bottom:-1px;
+	left:182px;
+	border:1px solid #cacaca;
+	border-top-right-radius:10px;
+	height:42px;
+}
+
+#interface_container div
+{
+	background-color:#f0f0f0;
+	border-right:1px solid #cacaca;
+	padding:6px 10px 6px 10px;
+	height:30px;
+	float:left;
+}
+
+#interface_container div:last-child
+{
+	border-top-right-radius:9px;
+	border-right:0px solid #cacaca;
+}
+
+#interface_container div:hover
+{
+	background-color:#cacaca;
+}
+
+#interface_minimap
+{
+	background-color:#f0f0f0;
+	border: 1px solid #cacaca;
+	position:absolute;
+	height:182px;
+	width:182px;
+	bottom:-1px;
+	left:-1px;
+}
+
+#interface_minimap canvas
+{
+	position:absolute;
+	top:4px;
+	right:4px;
+}
